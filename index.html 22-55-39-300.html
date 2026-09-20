@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Personal Journal</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+        <nav id="mainNav">
+            <button id="changeUserBtn">Change User</button>
+            <button id="statsBtn">User Stats</button>
+        </nav>
+
+        <!-- Welcome Page -->
+        <div id="welcome">
+            <h1>Welcome to Journal!</h1>
+            <label>Enter your name:</label>
+            <input id="nameInput" placeholder="Name...">
+            <button id="saveNameBtn">Save</button>
+            <br><br>
+            <label>or Choose Name:</label>
+            <select id="chooseName"></select>
+            <button id="chooseBtn">Choose</button>
+        </div>
+
+        <!-- Stats Page -->
+        <div id="name">
+            <h1 id="helloName"></h1>
+            <label id="totalEntries"></label><br>
+            <label id="lastDayEntered"></label><br><br>
+            <button id="startBtn">Start Journaling</button>
+            <button id="deleteUserBtn">Delete User</button>
+        </div>
+
+        <!-- Journal Page -->
+        <div id="journal">
+            <h1 id="nameJournal"></h1>
+            <textarea id="textEntry" placeholder="Write your thoughts here..."></textarea><br>
+            <button id="saveEntryBtn">Save</button>
+            <button id="newEntryBtn" style="display: none;">New Entry</button>
+            <button id="deleteBtn">Delete Entry</button>
+            <h3>Previous Entries:</h3>
+            <select id="entrySelect">
+                <option value="">Select an entry</option>
+            </select>
+        </div>
+
+        <script src="script.js"></script>
+    </body>
+</html>

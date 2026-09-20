@@ -1,0 +1,116 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Segoe UI", Arial, sans-serif;
+}
+
+
+body {
+    background: #e0e1dd;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+nav#mainNav {
+    display: none;
+    background: #778da9;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+nav#mainNav button {
+    background: #e0e1dd;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background 0.2s;
+    color: #1b263b;
+}
+
+nav#mainNav button:hover {
+    background: #bc4749;
+}
+
+#welcome, #name, #journal {
+    background: #778da9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin: auto;
+}
+
+h1 {
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    color: black;
+}
+
+input, select, textarea, button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+button {
+    background: #1b263b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #bc4749;
+}
+
+h3 {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    color: #ffffff;
+}
+
+@media (max-width: 768px) {
+    body {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    nav#mainNav {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.3rem;
+    }
+
+    input, select, textarea, button {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
