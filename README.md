@@ -2,6 +2,12 @@
 
 A multi-user journaling web app built with vanilla JavaScript. Users can write, save, and delete diary entries, with data persisted in the browser via localStorage.
 
+## Screenshots
+![Welcome](./welcome.png)
+![User](./user.png)
+![Entry](./add-entry.png)
+![Delete](./delete-entry.png)
+
 ## Features
 - **Multiple users** — create a new user or switch between existing ones
 - **Write entries** — save text entries with an automatic date stamp (DD/MM/YYYY)
